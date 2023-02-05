@@ -83,16 +83,16 @@ public class Main {
 
         switch (oper) {
             case "+":
-                System.out.printf("%f + %f = %f", num1, num2, num1 + num2);
+                System.out.printf("%f + %f = %f\n", num1, num2, num1 + num2);
                 break;
             case "-":
-                System.out.printf("%f - %f = %f", num1, num2, num1 - num2);
+                System.out.printf("%f - %f = %f\n", num1, num2, num1 - num2);
                 break;
             case "*":
-                System.out.printf("%f * %f = %f", num1, num2, num1 * num2);
+                System.out.printf("%f * %f = %f\n", num1, num2, num1 * num2);
                 break;
             case "/":
-                System.out.printf("%f / %f = %f", num1, num2, num1 / num2);
+                System.out.printf("%f / %f = %f\n", num1, num2, num1 / num2);
                 break;
             default:
                 System.out.println("Указана неверная операция");
@@ -131,7 +131,7 @@ public class Main {
                 for (int j = 0; j < limit; j++) {
                     if (Integer.parseInt(Integer.toString(i) + Character.toString(qChar[1]))
                             + Integer.parseInt(Character.toString(wChar[0]) + Integer.toString(j)) == e) {
-                        System.out.printf("Восстановленное выражение -> %d + %d = %d",
+                        System.out.printf("Восстановленное выражение -> %d + %d = %d\n",
                                 Integer.parseInt(Integer.toString(i) + Character.toString(qChar[1])),
                                 Integer.parseInt(Character.toString(wChar[0]) + Integer.toString(j)), e);
                         flag = true;
@@ -143,7 +143,7 @@ public class Main {
                 for (int j = 0; j < limit; j++) {
                     if (Integer.parseInt(Character.toString(qChar[0]) + Integer.toString(i))
                             + Integer.parseInt(Integer.toString(j) + Character.toString(wChar[1])) == e) {
-                        System.out.printf("Восстановленное выражение -> %d + %d = %d",
+                        System.out.printf("Восстановленное выражение -> %d + %d = %d\n",
                                 Integer.parseInt(Character.toString(qChar[0]) + Integer.toString(i)),
                                 Integer.parseInt(Integer.toString(j) + Character.toString(wChar[1])), e);
                         flag = true;
@@ -153,7 +153,7 @@ public class Main {
         }
 
         if (flag == false) {
-            System.out.print("Решения нет");
+            System.out.println("Решения нет");
         }
     }
 }
